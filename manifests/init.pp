@@ -1,5 +1,5 @@
 class chrony {
-  ensure_packages('[chrony]')
+  ensure_packages(['chrony'])
 
   file {'/etc/chrony.conf':
     source  => 'puppet://modules/chrony/chrony.conf',
